@@ -1,4 +1,4 @@
-Welcome to Lumache's documentation!
+SCCHT数值计算
 ===================================
 
 **Lumache** (/lu'make/) is a Python library for cooks and food lovers
