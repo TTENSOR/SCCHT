@@ -1,4 +1,4 @@
-Usage
+01-Install GCC-4.4.7(4.7.3) on Ubuntu 18.04
 =====
 
 .. _installation:
@@ -6,29 +6,22 @@ Usage
 Installation
 ------------
 
-To use Lumache, first install it using pip:
+install:https://askubuntu.com/questions/1084930/install-gcc-4-4-7-on-ubuntu-18-04
 
 .. code-block:: console
 
-   (.venv) $ pip install lumache
+sudo add-apt-repository 'deb http://archive.ubuntu.com/ubuntu/ trusty main'
+sudo add-apt-repository 'deb http://archive.ubuntu.com/ubuntu/ trusty universe'
+sudo apt update
+sudo apt install gcc-4.4
+sudo apt install gcc-4.7
 
-Creating recipes
+gcc4.7
 ----------------
 
-To retrieve a list of random ingredients,
-you can use the ``lumache.get_random_ingredients()`` function:
+https://askubuntu.com/questions/113291/how-do-i-install-gcc-4-7:
 
-.. autofunction:: lumache.get_random_ingredients
-
-The ``kind`` parameter should be either ``"meat"``, ``"fish"``,
-or ``"veggies"``. Otherwise, :py:func:`lumache.get_random_ingredients`
-will raise an exception.
-
-.. autoexception:: lumache.InvalidKindError
-
-For example:
-
->>> import lumache
->>> lumache.get_random_ingredients()
-['shells', 'gorgonzola', 'parsley']
+sudo add-apt-repository ppa:ubuntu-toolchain-r/test
+sudo apt-get update
+sudo apt-get install gcc-4.7
 
